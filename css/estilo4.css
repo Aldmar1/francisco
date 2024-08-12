@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* barra de navegación>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+nav{
+    background: #202020;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #f7be21;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.container{
+    width: 100vh;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgb(29, 29, 29);
+}
+
+
+
+/* fin de lineas de banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .nav1{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c2c2c;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #f7be21;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .container{
+        width: 100%;
+        padding: 2px;
+    }
+    
+}
+/* fin de la barra de navegación>>>>>>>>>>>>>>>>>>>>> */
+/* cierre */
+body{
+    background-color: #fbf2e6;
+}
+
+
+/* inicio de código de formulario>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.container-form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #eeecec;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-form {
+    margin-bottom: 20px;
+}
+
+.campo,
+textarea,
+.btn-enviar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /
+}
+
+
+.btn-enviar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+
+}
+
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a{
+    
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar{
+    background: #e39403;
+}
+
+@media (min-width: 768px) {
+    .container-form {
+        max-width: 800px; /
+    }
+}
+
+/* fin del formulario>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/*  footer  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center; 
+    color: #f7be21;       
+}
+
+/* fin del footer>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

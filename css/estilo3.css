@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fbf2e6;
+}
+/* barra de nabegación>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+nav{
+    background: #202020;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #f7be21;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Estilos para el contenedor y la imagen */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 135px;
+    left: 75%;
+    transform: translateX(-50%);
+    background-color: #dea509;
+    color: white;
+    padding: 50px 80px;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        font-size: 1.8rem;
+        padding: 28px 15px;
+        bottom: 35px;
+        left: 55%;
+        transform: translateX(-25%);
+    }
+}
+
+
+/* imagenes galeria>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.galeria{
+    margin-bottom: 0.2rem;
+
+}
+
+.galeria-grid-1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 15px;
+}
+.galeria-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.galeria-item-2 img{
+    width: 100%;  
+
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 10px 3px 10px grey;
+}
+.galeria-item-3 img{
+    width: 100%;  
+
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 10px 3px 10px grey;
+}
+
+@media (max-width: 768px){
+    .galeria-grid-1{
+        grid-template-columns: 1fr;
+    } 
+
+    .galeria-grid-2{
+        grid-template-columns: 1fr;
+    } 
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .galeria-grid-1{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+/* fin de lineas de banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .nav1{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2b2b2b;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #f7be21;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .container{
+        width: 100%;
+        padding: 2px;
+    }
+}
+/* fin de la barra de navegación>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+/* section1>>>>>>>>>>>>>>>>>>>>> */
+/* Estilos generales para la sección */
+.section1 {
+    padding: 20px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+
+.title, .title1 {
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+}
+
+/* Estilos para las imágenes */
+.img-servicios {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-top: 10px; 
+}
+
+
+
+@media (max-width: 768px) {
+    .title, .title1 {
+        font-size: 1.3em; 
+    }
+}
+
+/* tabla>>>>>>>>>>>>>>>>>>>>>>> */
+
+.section2 {
+    width: 100%;
+    overflow-x: auto; 
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.row {
+    display: flex; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.cell {
+    flex: 1; 
+    padding: 10px;
+    text-align: center; 
+    min-width: 100px; 
+}
+
+.header {
+    font-weight: bold; 
+    background-color: #ebd61f; 
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap; 
+    }
+    .cell {
+        flex-basis: 50%; /
+    }
+}
+/* fin del coódigo de tabla>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+/*  footer  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center; 
+    color: #f7be21;       
+}
+
+/* fin del footer>>>>>>>>>>>>>>>>>>>>> */
