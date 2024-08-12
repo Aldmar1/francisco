@@ -64,8 +64,10 @@ li a.active, li a:hover{
 
 img {
     width: 100%;
-    border-radius: 15px;
     box-shadow: 0px 3px 5px rgb(29, 29, 29);
+}
+.banner-inicio{
+    border-radius: 15px;
 }
 
 

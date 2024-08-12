@@ -15,6 +15,7 @@ nav{
     height: 80px;
     width: 100%;
 }
+
 .enlace{
     position: absolute;
     padding: 20px 50px;
@@ -57,6 +58,9 @@ li a.active, li a:hover{
 /* banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Estilos para el contenedor y la imagen */
+.banner-inicio{
+    border-radius: 15px;
+}
 .container {
     position: relative;
     width: 100%;
@@ -173,6 +177,7 @@ li a.active, li a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 2;
     }
     nav ul li{
         display: block;
