@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body{
-    background-color: #fbf2e6;
+    background-image: url("../image/image.png");
 }
 /* barra de nabegación>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 nav{
@@ -152,6 +153,12 @@ section{
    }
 }
 
+@media (max-width: 397px){
+    .container{
+        height: auto;
+    }
+}
+
 /* fin del banner del banner carrusel>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
@@ -201,13 +208,139 @@ section{
 /* fin del presentación>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
-/*  footer  */
-footer{
-    background-color: black;
-    color: white;
-    padding: 15px;
-    text-align: center; 
-    color: #f7be21;       
+/* Estilos generales para asegurar que el mapa ocupe el 100% del ancho de la pantalla en dispositivos pequeños */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
+.ubicacion {
+    background-color: #fbf2e6;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.ubicacion h2 {
+    margin: 0; 
+    padding: 1em; 
+    text-align: center;
+}
+
+/* Ajustes para el contenedor del mapa */
+#mapa {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+
+/* Estilo para el iframe para asegurarse de que ocupa todo el contenedor */
+#mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+
+/* Para pantallas grandes (escritorios y dispositivos más grandes) */
+@media (min-width: 1025px) {
+    #mapa {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+
+.redes-sociales {
+    background-color: rgb(234, 217, 196);
+    text-align: center;
+    padding: 2em;
+    height: 15%;
+}
+
+.redes-sociales h2 {
+    margin-bottom: 1em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #1b1c1c;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icon:hover {
+    background-color: #d8af0b;
+}
+
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #151515;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+  
+.menu-elem {
+    list-style: none;
+}
+.menu-icon {
+    color: rgb(253, 252, 252);
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+  
+.menu-icon:hover {
+    opacity: 1;
+}
+  
+.text {
+    color: rgb(226, 189, 7);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 /* fin del footer>>>>>>>>>>>>>>>>>>>>> */

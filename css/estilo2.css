@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -120,73 +121,196 @@ img {
     }
 }
 /* fin de la barra de navegación>>>>>>>>>>>>>>>>>>>>> */
-/* paso 6: galeria */
 
-.galeria{
-    margin-bottom: 2rem;
-
+.productos-lacteos {
+    padding: 2em;
+    background-color: #fff;
 }
 
-.galeria-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    padding: 15px;
-}
-
-.galeria-item img{
-    width: 100%;  
-
-    height: 500px;
-    border-radius: 15px;
-    box-shadow: 10px 3px 10px grey;
-}
-p{
-    margin-top: 25px;
-}
-
-h2{
+.introduccion {
     text-align: center;
-    background-color: #f7be21;
-    border-radius: 15px;
-    padding: 15px;
-
+    margin-bottom: 2em;
 }
 
-h3{
-    text-align: center;
-    background-color: #f7be21;
-    border-radius: 15px;
-    padding: 15px;
-    margin-top: 15px;
-     
-}
-h4{
-    text-align: center;
-    background-color: #252666;
-    border-radius: 15px;
-    width: 150px;
-    padding: 10px;
-    color: #fff;
-    margin-top: 17px;
-}
-ol{
-    text-align: center
+.introduccion h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
 }
 
-a{
+.introduccion p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilo para el índice de productos */
+.productos-categorias {
+    margin-bottom: 2em;
+}
+
+.productos-categorias h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.productos-categorias ol {
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #452e2e;
+    margin-bottom: 2em;
+}
+
+.productos-categorias  {
+    color: #4f4e4c;
     text-decoration: none;
+}
+.productos-categorias-1 a {
+    color: #f5b80f;
+    text-decoration: none;
+}
+
+.productos-categorias a:hover {
+    text-decoration: none;
+}
+
+/* Estilo para las tarjetas de productos */
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: space-between;
+}
+
+.producto-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0000001a;
+    overflow: hidden;
+    width: calc(33% - 1.5em); 
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    height: 600px;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+}
+
+.producto-card h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.producto-card p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 1em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    color: #343030 !important;
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #f5b80f;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+
+.btn:hover {
+    background-color: #e6a119;
+}
+.tittle-1{
+
+    position: relative;
+    text-align: center;
+    background-color: #464444;
+    padding: 15px;
+    margin-top: 2%;
+}
+.tittle-2{
+    background-color: #e6a119;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+}
+.indice{
+    text-align: center;
+}
+
+@media (max-width: 798px) {
+    .producto-card {
+        width: calc(50% - 1.5em);
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .producto-card {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
 
 /*  footer  */
-footer{
-    background-color: black;
-    color: white;
-    padding: 15px;
-    text-align: center; 
-    color: #f7be21;       
+.footer {
+    position: relative;
+    width: 100%;
+    background: #151515;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+  
+.menu-elem {
+    list-style: none;
+}
+.menu-icon {
+    color: rgb(253, 252, 252);
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+  
+.menu-icon:hover {
+    opacity: 1;
+}
+  
+.text {
+    color: rgb(226, 189, 7);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 /* fin del footer>>>>>>>>>>>>>>>>>>>>> */

@@ -21,7 +21,7 @@
         </label>
 
         <a href="index.html" class="enlace">
-            <img src="image/Logo.png" alt="" class="logo">
+            <img src="image/Logo.png" alt="" class="logo-1">
         </a>
         <ul class="nav1">
             <li><a href="index.html">Inicio</a></li>
@@ -31,51 +31,74 @@
         </ul>
 
     </nav>
-    <div class="container">
+    <!-- <div class="container-banner">
         <img class="banner-inicio" src="image/banneratencion-compressed.jpg" alt="">
-    </div>
+    </div> -->
 
-    <div class="container-form">
-        <div class="info-form">
-            <h2>Contáctenos</h2>
-            <p>En San Francisco tu opinión siempre será esuchada por nosotros, si tienes alguna duda o reclamo no dudes en llenar el formulario con tu nombre, correo y la razón por la que te comunicas con nosotros.</p>
-            <a href="#"><i class="fa fa-phone"></i>+51 999544683</a>
-            <a href="#"><i class="fa fa-envelope"></i> oficialsanfrancisco@gmail.com</a>
-            <a href=""><i class="fa fa-map-marked"></i>Arequipa, Perú</a>
 
+    <div class="content">
+
+        <h1 class="logo">Contáctenos<span></span></h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <form action="">
+                    <p>
+                        <label>Nombres y apellidos</label>
+                        <input type="text" name="nombre y apellidos">
+                    </p>
+                    <p>
+                        <label>Correo electrónico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número de celular</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Motivo</label>
+                        <input type="text" name="motivo">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"><span> <span>Cayma, Arequipa</span></span></i> </li>
+                    <li><i class="fas fa-phone"></i> 51 (54) 219020</li>
+                    <li><i class="fas fa-envelope-open-text"></i> oficialsanfrancisco.com</li>
+                </ul>
+                <p>Escribenos Estamos aquí para ayudarte en todo lo que necesites. Si enfrentas algún problema o tienes alguna pregunta, nuestro equipo de atención al cliente está disponible para asistirte, tu satisfacción es fundamental para nosotros.
+
+                    ¡Esperamos escuchar de ti pronto! Puedes contactarnos a través de este formulario, y estaremos encantados de asistirte.</p>
+                <p>Agradecemos tu preferencia</p>
+            </div>
         </div>
-        <form action="" auticomplete="off">
-            <input type="text" name="nombre" placeholder="Ingresa tus nombre y apellidos" class="campo">
-            <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
-            <textarea name="mensaje" placeholder="Ingresa tu mensaje" id=""></textarea>
-
-            <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
-        </form>
-
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <P>
-            &copy; 2024 San Francisco. Todos los derechos reservados.
-        </P>
-    </footer>
+    <footer class="footer">
+        <ul class="menu">
+          <li class="menu-elem">
+            <a href="index.html" class="menu-icon"> Inicio </a>
+          </li>
+          <li class="menu-elem">
+            <a href="contacto.html" class="menu-icon"> Contacto </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Sobre Nosotros </a>
+          </li>
+        </ul>
+        <p class="text">2024 San Francisco | Todos los derechos reservados</p>
+      </footer>
 </body>
 
 </html>
